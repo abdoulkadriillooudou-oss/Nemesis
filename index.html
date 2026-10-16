@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Kadri Illo: backend, frontend, mobile and containerization developer.">
+  <title>Kadri Illo | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Week 1: header landmark + Week 3: Flexbox navigation -->
+  <header class="site-header" role="banner">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="#top" aria-label="Kadri Illo, back to top">Kadri<span>.</span>Illo</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+          <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
+          <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
+          <li class="nav__item"><a class="nav__link" href="#approach">Approach</a></li>
+          <li class="nav__item"><a class="nav__link nav__link--cta" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+
+    <!-- Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__inner">
+        <figure class="profile">
+          <!--
+            PROFILE PICTURE: save your photo as images/kadri.jpg (next to this file),
+            or change the src below to any other path or full URL.
+            The circular crop is handled by CSS (.profile__img).
+          -->
+          <img
+            class="profile__img"
+            src="images/kadri.jpg"
+            alt="Black and white portrait of Kadri Illo, head tilted upward">
+          <figcaption class="visually-hidden">Kadri Illo, software developer</figcaption>
+        </figure>
+
+        <div class="hero__content">
+          <p class="hero__eyebrow">Hello, I'm</p>
+          <h1 class="hero__title" id="hero-title">Kadri Illo</h1>
+          <p class="hero__role">IT Manager &middot; Software Developer &middot; From Niger</p>
+          <p class="hero__tagline">IT Manager at Sahel Développement Niger and developer building reliable, containerized applications across backend, web and mobile.</p>
+          <ul class="hero__tags" aria-label="Core technologies">
+            <li class="tag">Spring Boot</li>
+            <li class="tag">PostgreSQL</li>
+            <li class="tag">MySQL</li>
+            <li class="tag">HTML &amp; CSS</li>
+            <li class="tag">Flutter</li>
+            <li class="tag">Docker</li>
+          </ul>
+          <a class="button" href="#skills">View my skills</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About + aside (Grid layout combined with Flexbox) -->
+    <div class="split container">
+      <article class="about" id="about" aria-labelledby="about-title">
+        <h2 class="section-title" id="about-title">About Me</h2>
+        <p>I am Illo Oudou Abdou Kadri, known as Kadri Illo, an IT Manager and developer from Niger. I work with the NGO Sahel Développement Niger, an affiliate of the Africa Career Networks (ACN) programme, where I support participants on their path to internships and jobs and engage partner employers.</p>
+        <p>As a developer, I enjoy the full journey of an application: designing the database, building the Spring Boot services behind it, creating the interface people use, and packaging everything with Docker so it runs the same way everywhere.</p>
+        <p>On the web I write semantic, accessible and responsive HTML and CSS. On mobile I build cross-platform apps with Flutter. I care about clean structure, readable code and technology that solves real local needs.</p>
+      </article>
+
+      <aside class="highlights" aria-labelledby="highlights-title">
+        <h2 class="highlights__title" id="highlights-title">At a Glance</h2>
+        <dl class="highlights__list">
+          <div class="highlights__row">
+            <dt>Role</dt>
+            <dd>IT Manager</dd>
+          </div>
+          <div class="highlights__row">
+            <dt>Organisation</dt>
+            <dd>Sahel Développement Niger</dd>
+          </div>
+          <div class="highlights__row">
+            <dt>Programme</dt>
+            <dd>Africa Career Networks</dd>
+          </div>
+          <div class="highlights__row">
+            <dt>Origin</dt>
+            <dd>Niger</dd>
+          </div>
+          <div class="highlights__row">
+            <dt>Backend</dt>
+            <dd>Spring Boot</dd>
+          </div>
+          <div class="highlights__row">
+            <dt>Databases</dt>
+            <dd>PostgreSQL, MySQL</dd>
+          </div>
+          <div class="highlights__row">
+            <dt>Frontend</dt>
+            <dd>HTML, CSS</dd>
+          </div>
+          <div class="highlights__row">
+            <dt>Mobile</dt>
+            <dd>Flutter</dd>
+          </div>
+          <div class="highlights__row">
+            <dt>DevOps</dt>
+            <dd>Docker</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+
+    <!-- Skills: CSS Grid cards -->
+    <section class="skills container" id="skills" aria-labelledby="skills-title">
+      <h2 class="section-title" id="skills-title">Skills</h2>
+      <div class="skills__grid">
+
+        <article class="card">
+          <h3 class="card__title">Backend Development</h3>
+          <p class="card__text">Building REST APIs and business logic with Spring Boot, with a focus on clear structure and maintainability.</p>
+          <p class="card__meta">Spring Boot</p>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Databases</h3>
+          <p class="card__text">Designing schemas and writing queries for relational databases.</p>
+          <p class="card__meta">PostgreSQL &middot; MySQL</p>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Frontend Development</h3>
+          <p class="card__text">Semantic, accessible and responsive pages built with modern HTML and CSS.</p>
+          <p class="card__meta">HTML &middot; CSS</p>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Mobile Development</h3>
+          <p class="card__text">Cross-platform mobile applications with a single Flutter codebase.</p>
+          <p class="card__meta">Flutter</p>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Containerization</h3>
+          <p class="card__text">Packaging applications and their dependencies into portable, reproducible containers.</p>
+          <p class="card__meta">Docker</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects container" id="projects" aria-labelledby="projects-title">
+      <h2 class="section-title" id="projects-title">Featured Project</h2>
+      <article class="project">
+        <div class="project__body">
+          <p class="project__label">Final-Year Project</p>
+          <h3 class="project__title">Low-Cost Smart Irrigation System</h3>
+          <p class="project__text">An affordable irrigation solution designed for local farming conditions. An ESP32 microcontroller reads a soil moisture sensor and controls a water pump automatically, with dry-run protection to prevent the pump from running without water.</p>
+        </div>
+        <ul class="project__tags" aria-label="Project technologies">
+          <li class="tag">ESP32</li>
+          <li class="tag">Soil sensor</li>
+          <li class="tag">Water pump</li>
+          <li class="tag">Dry-run protection</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Approach: ties back to the course topics -->
+    <section class="approach container" id="approach" aria-labelledby="approach-title">
+      <h2 class="section-title" id="approach-title">How I Build for the Web</h2>
+      <ol class="approach__list">
+        <li class="approach__step">
+          <h3 class="approach__heading">Semantic &amp; accessible</h3>
+          <p>Meaningful HTML5 structure, ARIA landmarks and descriptive alt text so every visitor can navigate the page.</p>
+        </li>
+        <li class="approach__step">
+          <h3 class="approach__heading">Organized CSS</h3>
+          <p>BEM naming and CSS custom properties keep stylesheets consistent and easy to maintain.</p>
+        </li>
+        <li class="approach__step">
+          <h3 class="approach__heading">Flexible layouts</h3>
+          <p>Flexbox and Grid used together for navigation, cards and full page structure.</p>
+        </li>
+        <li class="approach__step">
+          <h3 class="approach__heading">Mobile-first &amp; responsive</h3>
+          <p>Designed for small screens first, then enhanced with media queries, fluid type and flexible images.</p>
+        </li>
+        <li class="approach__step">
+          <h3 class="approach__heading">Purposeful motion</h3>
+          <p>Transitions, transforms and keyframe animations that add polish without getting in the way.</p>
+        </li>
+      </ol>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="contact" role="contentinfo">
+    <div class="site-footer__inner">
+      <section class="site-footer__section" aria-labelledby="contact-title">
+        <h2 class="site-footer__title" id="contact-title">Let's Work Together</h2>
+        <p class="site-footer__text">Interested in working with me? Get in touch.</p>
+        <!-- Replace with your real email address -->
+        <a class="button button--light" href="mailto:your.email@example.com">your.email@example.com</a>
+      </section>
+      <p class="site-footer__copy">&copy; 2026 Kadri Illo. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
